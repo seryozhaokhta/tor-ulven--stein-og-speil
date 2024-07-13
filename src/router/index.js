@@ -3,12 +3,12 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../components/HomePage.vue";
 import NorwegianOriginal from "../components/NorwegianOriginal.vue";
-import TranslationText from "../components/TranslationText.vue";
+import TranslationSection from "../components/TranslationSection.vue";
 
 const routes = [
   { path: "/", component: HomePage },
   { path: "/norwegian-original", component: NorwegianOriginal },
-  { path: "/translation", component: TranslationText },
+  { path: "/translation", component: TranslationSection },
 ];
 
 const router = createRouter({
@@ -17,3 +17,4 @@ const router = createRouter({
 });
 
 export default router;
+

@@ -2,31 +2,38 @@
 
 <template>
   <div id="app">
-    <HeaderApp />
-    <router-view></router-view>
-    <FooterApp />
+    <HeaderSection />
+    <router-view />
+    <FooterSection />
   </div>
 </template>
 
 <script>
-import HeaderApp from './components/HeaderApp.vue'
-import FooterApp from './components/FooterApp.vue'
+import HeaderSection from './components/HeaderSection.vue';
+import FooterSection from './components/FooterSection.vue';
 
 export default {
   name: 'App',
   components: {
-    HeaderApp,
-    FooterApp
+    HeaderSection,
+    FooterSection
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  margin-top: 60px;
+:root {
+  --background: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme='dark'] {
+  --background: #000000;
+  --text-color: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
 }
 </style>

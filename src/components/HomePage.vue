@@ -1,10 +1,10 @@
 <!-- src/components/HomePage.vue -->
 
 <template>
-    <main>
-        <h1>{{ $t('homeTitle') }}</h1>
+    <div>
+        <h1>{{ $t('title') }}</h1>
         <p>{{ $t('homeDescription') }}</p>
-    </main>
+    </div>
 </template>
 
 <script>
@@ -14,7 +14,8 @@ export default {
 </script>
 
 <style scoped>
-main {
-    padding: 20px;
+div {
+    padding: 2rem;
+    text-align: center;
 }
 </style>

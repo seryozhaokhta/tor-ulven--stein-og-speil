@@ -1,8 +1,8 @@
-<!-- src/components/NorwegianOriginal.vue -->
+<!-- src/components/TranslationSection.vue -->
 
 <template>
     <div>
-        <h1>{{ $t('norwegianOriginal') }}</h1>
+        <h1>{{ $t('translation') }}</h1>
         <div v-for="section in sections" :key="section.id">
             <h2>{{ section.title }}</h2>
             <h3>{{ section.subtitle }}</h3>
@@ -12,13 +12,13 @@
 </template>
 
 <script>
-import no from '../i18n/locales/no.json';
+import ru from '../i18n/locales/ru.json';
 
 export default {
-    name: 'NorwegianOriginal',
+    name: 'TranslationSection',
     data() {
         return {
-            sections: no.sections
+            sections: ru.sections
         };
     }
 }

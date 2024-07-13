@@ -3,16 +3,57 @@
   "author": "Tor Ulven",
   "subtitle": "mixtum compositum",
   "home": "Hjem",
+  "homeDescription": "Utforsk boken av Tor Ulven",
   "norwegianOriginal": "Norsk Original",
   "translation": "Oversettelse",
   "toggleTheme": "Bytt tema",
   "switchLanguage": "Bytt til russisk",
+  "footer": "footer",
   "sections": [
     {
       "id": 1,
       "title": "UTSTILLING I",
       "subtitle": "(utkast til minnesmerke)",
-      "body": "Monumentet er et monument over sin egen glemsel. Og får mening først når det ikke finnes noen som kan gi det mening. Det er steinen du holder i hånden. Som du aldri når inn til. Bare speilet viser alltid riktig tid. Når steinen speiler seg, er det ikke av forfengelighet. Speilet røper alt, steinen ingenting. Som stein og speil er det du helst vil vite."
+      "body": [
+        "Monumentet er et monument over sin egen glemsel. Og får mening først når det ikke finnes noen som kan gi det mening. Det er steinen du holder i hånden. Som du aldri når inn til. Bare speilet viser alltid riktig tid. Når steinen speiler seg, er det ikke av forfengelighet. Speilet røper alt, steinen ingenting. Som stein og speil er det du helst vil vite."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "UTSTILLING II",
+      "subtitle": "Psyke ved Svarttjern",
+      "body": [
+        "Aldri sett: et palass med steile klipper ved havet (som en fortsettelse av dem, liksom berget kunne bygge hus av seg selv med usynlige hakker; for noe tøv), med høye, dype og gapende vindusnisjer, unten et lys, enda det skumrer, og litt forvitret, det hele, forfallent, kanskje ubebodd og tomt.",
+        "Hun hviler hodet tungt mot hånden, kvinne som sitter et stykke oppe på stranden, blant oliventrær og gressende hjorter. De bare armene hennes er meget hvite mot det skittenbrune buskaset, nesten som om de var uekte of inneholdt en elektrisk lampe av noe slag (lik plastslangene fylt med lyspærer som omkranser enkelte butikkvinduer).  Kvinnen stirrer sørgmodig grublende fremfor seg, og hun er Psyke, alrså sjelen, og slottet (som hun tydeligvis ikke slipper inn i) er Amors, det vil si Kjærlighetens, palass. Men «kom og lad os fly Fra dette melancholske Fængsel, Hvor Ønsker daglig dø i Trængsel, Og fødes for at dø paa ny», fra det urolig bølgende havet til Svarttjern, med sin nesten urørlige, glatte overflate (bare kruset av en håndfull sakte svømmende strokkender), kantet av bergnabber og en halvt skogkledd ur som stenger for det disige lyset. Solen treffer likevel, skarpt, en død furu, nedfalt, den gir inntrykk av noe vrengt (en ødelagt paraply?), med røttene dels i luften, dels i vannet, og hvis man kunne røre den, ville man med bare fingrene kunne pirke løs grå, morkne fliser og kaste dem i vannet, og se at de knapt rørte seg, og man ville kjenne den myrete lukten av mudder og slim og forråtnelse. Med tilstrekkelig tålmodighet kunne man vente på at neste tre, halvdødt og hengende skrått utover tjernet, skal falle, med et brak og et plask som antadelig vil lyde øredøvende i den bløte, mosekledde og starrbegrodde strillheten, men til gjengjeld vare megen kort. Og det blir lenge til neste gang. Under vannspeile er det like mørkt som bak vinduene i palasset. Altså slapp vi ikke unna allikevel. Kanskje må tjernet anses som vindu i et tomt,  underjordisk slott (eller fengsel).",
+        "Nåvel. Trærne ingen har sett (og for den saks skyld palassene, og palassenes ruiner, og hus og hytte) faller, før eller senere, fallet er felles for så mye, et fellesfall, og opptrevlingen, ruineringen, og så videre. I bildene er alt bare på neppet til å falle hele tiden, det faller ikke, det aldri sette henger det, henger og henger, lik en spekeskinke makken mislykkes i å fortære helt (eller snarere bildet av en eldgammel spekeskinke i et eldgamelt stabbur som i virkeligheten ikke finnes mer); henger altså, til felles beundring og avbenyttelse. Til avbenyttelse, som en vei: dra avgårde. Eller: kom deg vekk. Eller: bli her for alltid."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Mellomspill I",
+      "subtitle": "(diktatur: krønike)",
+      "body": [
+        "Den gangen, i nedgangstidene, falt vi fra hverandre og leffe oss isrykker: to kravlende, løshender glefset tannløst etter er forbiflagrende øre, en tunge eller tre siklet på øyet, det blinde kneet snuste mot en rompe som ikke lenger kunne logre, bare tenke, kinnet sov i ankelens vugge inntil sparket våknet, overrumplet av harde brystvorter løftet ryggen skulderbladene over hodet, hofter dunket pendelaktig mot sin klokkekasse eller sin likkiste for å bryte seg ut. Og hvis hunden var heldig når den slikket den halve dialogens munn, ville den mellom tennene finne gammel smak av et kjønn like fremmed for den som ytringsfriheten. Men nå er det nesten bare kjøterne igjen, og de har funnet tilbake til sitt gamle fordringsløse og harmoniske liv, som hele vesener, i pakt med allnaturen."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "KONSERT I",
+      "subtitle": "(nocturne électrique)",
+      "body": [
+        "Fredagsnatt og vinduet på gløtt. Der ute (uvisst akkurat hvor) har noen skrudd opp stereoanlegget. Antagelig en fyllefest på gang. All diskant og mellomtone er borte, og med det melodien. Bare bass og trommer dunker og dunker hit: et kunstig hjerte i nattens kropp. Og jeg husker hvordan det var å ligge med hodet mot et bryst (et kvinnebryst, når sant skal sies) og lytte, og det var det viktigste hjertet som slo."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "FORESTILLING I",
+      "body": [
+        "X Jeg er helt utslitt.",
+        "Y Jeg også. Vi går og legger oss med én gang.",
+        "X Tenk om vi kunne ligge begravd i hverandre. Da ville vi være sammen for alltid. Og aldri gjenoppstå til ensomheten inne i individet.",
+        "Y Du med dine evinnelige graver. Jeg kunne være gravid med deg, og når du ble født, ville du være uthvilt. Og så videre."
+      ]
     }
   ]
 }
+  

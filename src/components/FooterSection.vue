@@ -1,4 +1,4 @@
-<!-- src/components/FooterApp.vue -->
+<!-- src/components/FooterSection.vue -->
 
 <template>
     <footer>
@@ -8,13 +8,14 @@
 
 <script>
 export default {
-    name: 'FooterApp'
+    name: 'FooterSection'
 }
 </script>
 
 <style scoped>
 footer {
+    background: var(--background);
+    padding: 1rem;
     text-align: center;
-    padding: 10px 0;
 }
 </style>

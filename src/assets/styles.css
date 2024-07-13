@@ -1,0 +1,22 @@
+/* src/assets/styles.css */
+
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #2c3e50;
+  --background-color-dark: #2c3e50;
+  --text-color-dark: #ffffff;
+}
+
+[data-theme='light'] {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+[data-theme='dark'] {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}

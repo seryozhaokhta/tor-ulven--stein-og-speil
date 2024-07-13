@@ -1,22 +1,18 @@
 {
+  "title": "Stein og Speil",
+  "author": "Tor Ulven",
+  "subtitle": "mixtum compositum",
   "home": "Hjem",
   "norwegianOriginal": "Norsk Original",
   "translation": "Oversettelse",
-  "footer": "Dette er fotnoten",
-  "homeTitle": "Velkommen til Stein og Speil",
-  "homeDescription": "Utforsk boken av Tor Ulven",
-  "norwegianOriginalTitle": "Norsk Original",
-  "translationTitle": "Oversettelse",
-  "texts": [
+  "toggleTheme": "Bytt tema",
+  "switchLanguage": "Bytt til russisk",
+  "sections": [
     {
       "id": 1,
-      "title": "FORESTILLING X",
-      "body": "Et menneske, et offer for krig og forfølgelse, så utmattet og sykdomsherjet at det bokstavelig talt bare var en beinrind. ..."
-    },
-    {
-      "id": 2,
-      "title": "UTSTILLING XXIII",
-      "body": "Den 4. januar. Det snør dels diagonalt, dels horisontalt, alt etter vindkastene. ..."
+      "title": "UTSTILLING I",
+      "subtitle": "(utkast til minnesmerke)",
+      "body": "Monumentet er et monument over sin egen glemsel. Og får mening først når det ikke finnes noen som kan gi det mening. Det er steinen du holder i hånden. Som du aldri når inn til. Bare speilet viser alltid riktig tid. Når steinen speiler seg, er det ikke av forfengelighet. Speilet røper alt, steinen ingenting. Som stein og speil er det du helst vil vite."
     }
   ]
 }

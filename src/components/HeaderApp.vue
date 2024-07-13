@@ -8,8 +8,9 @@
                 <li><router-link to="/norwegian-original">{{ $t('norwegianOriginal') }}</router-link></li>
                 <li><router-link to="/translation">{{ $t('translation') }}</router-link></li>
             </ul>
-            <button @click="toggleLocale">{{ currentLocale === 'no' ? 'RU' : 'NO' }}</button>
-            <button @click="toggleTheme">{{ theme === 'light' ? 'Dark Mode' : 'Light Mode' }}</button>
+            <button @click="toggleLocale">{{ currentLocale === 'no' ? $t('switchLanguage') : $t('switchLanguage')
+                }}</button>
+            <button @click="toggleTheme">{{ $t('toggleTheme') }}</button>
         </nav>
     </header>
 </template>
@@ -17,20 +18,19 @@
 <script>
 export default {
     name: 'HeaderApp',
-    data() {
-        return {
-            currentLocale: this.$i18n.locale,
-            theme: 'light'
+    computed: {
+        currentLocale() {
+            return this.$i18n.locale;
         }
     },
     methods: {
         toggleLocale() {
-            this.currentLocale = this.currentLocale === 'no' ? 'ru' : 'no';
-            this.$i18n.locale = this.currentLocale;
+            this.$i18n.locale = this.currentLocale === 'no' ? 'ru' : 'no';
         },
         toggleTheme() {
-            this.theme = this.theme === 'light' ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', this.theme);
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
         }
     }
 }
@@ -45,11 +45,5 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 15px;
-}
-
-button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
 }
 </style>

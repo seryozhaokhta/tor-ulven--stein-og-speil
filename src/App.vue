@@ -22,23 +22,6 @@ export default {
 </script>
 
 <style>
-:root {
-  --background-color-light: #ffffff;
-  --text-color-light: #2c3e50;
-  --background-color-dark: #2c3e50;
-  --text-color-dark: #ffffff;
-}
-
-[data-theme='light'] {
-  background-color: var(--background-color-light);
-  color: var(--text-color-light);
-}
-
-[data-theme='dark'] {
-  background-color: var(--background-color-dark);
-  color: var(--text-color-dark);
-}
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

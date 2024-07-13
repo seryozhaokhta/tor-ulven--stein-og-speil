@@ -1,0 +1,22 @@
+{
+  "home": "Hjem",
+  "norwegianOriginal": "Norsk Original",
+  "translation": "Oversettelse",
+  "footer": "Dette er fotnoten",
+  "homeTitle": "Velkommen til Stein og Speil",
+  "homeDescription": "Utforsk boken av Tor Ulven",
+  "norwegianOriginalTitle": "Norsk Original",
+  "translationTitle": "Oversettelse",
+  "texts": [
+    {
+      "id": 1,
+      "title": "FORESTILLING X",
+      "body": "Et menneske, et offer for krig og forfølgelse, så utmattet og sykdomsherjet at det bokstavelig talt bare var en beinrind. ..."
+    },
+    {
+      "id": 2,
+      "title": "UTSTILLING XXIII",
+      "body": "Den 4. januar. Det snør dels diagonalt, dels horisontalt, alt etter vindkastene. ..."
+    }
+  ]
+}

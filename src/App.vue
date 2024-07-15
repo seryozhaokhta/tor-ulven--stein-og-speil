@@ -2,11 +2,13 @@
 
 <template>
   <v-app>
+    <HeaderSection />
     <v-main>
-      <HeaderSection />
-      <router-view />
-      <FooterSection />
+      <v-container fluid>
+        <router-view />
+      </v-container>
     </v-main>
+    <FooterSection />
   </v-app>
 </template>
 
@@ -37,5 +39,30 @@ export default {
 body {
   background: var(--background);
   color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+.v-application {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.v-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.v-container {
+  flex: 1;
 }
 </style>

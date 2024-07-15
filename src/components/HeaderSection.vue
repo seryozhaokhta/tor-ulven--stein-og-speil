@@ -18,20 +18,20 @@
         <template v-else>
             <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         </template>
-        <v-navigation-drawer v-model="drawer" app temporary right>
-            <v-list>
-                <v-list-item link to="/">{{ $t('home') }}</v-list-item>
-                <v-list-item link to="/norwegian-original">{{ $t('norwegianOriginal') }}</v-list-item>
-                <v-list-item link to="/translation">{{ $t('translation') }}</v-list-item>
-                <v-list-item @click="switchLanguage">
-                    {{ $i18n.locale === 'no' ? 'NO' : 'RU' }}
-                </v-list-item>
-                <v-list-item @click="toggleTheme">
-                    <v-icon>{{ themeIcon }}</v-icon> {{ $t('toggleTheme') }}
-                </v-list-item>
-            </v-list>
-        </v-navigation-drawer>
     </v-app-bar>
+    <v-navigation-drawer v-model="drawer" app temporary right>
+        <v-list>
+            <v-list-item link :to="'/'">{{ $t('home') }}</v-list-item>
+            <v-list-item link :to="'/norwegian-original'">{{ $t('norwegianOriginal') }}</v-list-item>
+            <v-list-item link :to="'/translation'">{{ $t('translation') }}</v-list-item>
+            <v-list-item @click="switchLanguage">
+                {{ $i18n.locale === 'no' ? 'NO' : 'RU' }}
+            </v-list-item>
+            <v-list-item @click="toggleTheme">
+                <v-icon>{{ themeIcon }}</v-icon> {{ $t('toggleTheme') }}
+            </v-list-item>
+        </v-list>
+    </v-navigation-drawer>
 </template>
 
 <script>

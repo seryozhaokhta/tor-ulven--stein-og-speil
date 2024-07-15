@@ -33,5 +33,7 @@ export default {
 <style scoped>
 .v-container {
     padding: 2rem;
+    background: var(--background);
+    color: var(--text-color);
 }
 </style>

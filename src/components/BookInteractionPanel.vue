@@ -16,8 +16,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.v-container {
-    padding: 2rem;
-}
-</style>
+<style scoped></style>

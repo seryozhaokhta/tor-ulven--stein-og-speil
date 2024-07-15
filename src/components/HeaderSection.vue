@@ -73,21 +73,6 @@ export default {
 </script>
 
 <style scoped>
-:root {
-    --background: #ffffff;
-    --text-color: #000000;
-}
-
-[data-theme='dark'] {
-    --background: #000000;
-    --text-color: #ffffff;
-}
-
-body {
-    background: var(--background);
-    color: var(--text-color);
-}
-
 .v-app-bar {
     transition: background-color 0.3s ease, color 0.3s ease;
     z-index: 1000;

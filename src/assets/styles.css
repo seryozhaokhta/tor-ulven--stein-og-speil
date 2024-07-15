@@ -1,3 +1,55 @@
 /* src/assets/styles.css */
 
+:root {
+  --background: #ffffff;
+  --text-color: #000000;
+  --primary-color: #1976d2;
+  --secondary-color: #424242;
+  --accent-color: #82b1ff;
+  --error-color: #ff5252;
+  --info-color: #2196f3;
+  --success-color: #4caf50;
+  --warning-color: #ffc107;
+}
 
+[data-theme="dark"] {
+  --background: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #bb86fc;
+  --secondary-color: #424242;
+  --accent-color: #03dac6;
+  --error-color: #cf6679;
+  --info-color: #2196f3;
+  --success-color: #4caf50;
+  --warning-color: #ffc107;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  color: var(--text-color);
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.v-app-bar, .v-footer, .v-navigation-drawer {
+  background-color: var(--background) !important;
+  color: var(--text-color) !important;
+}
+
+.v-container {
+  background-color: var(--background);
+  color: var(--text-color);
+}

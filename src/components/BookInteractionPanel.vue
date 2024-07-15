@@ -1,9 +1,13 @@
 <!-- src/components/BookInteractionPanel.vue -->
 
 <template>
-    <div>
-        <!-- Add interactive elements here -->
-    </div>
+    <v-container>
+        <v-row>
+            <v-col>
+                <!-- Add interactive elements here -->
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
@@ -13,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-div {
+.v-container {
     padding: 2rem;
 }
 </style>

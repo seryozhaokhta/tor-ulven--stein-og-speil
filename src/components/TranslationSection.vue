@@ -1,14 +1,20 @@
 <!-- src/components/TranslationSection.vue -->
 
 <template>
-    <div>
-        <h1>{{ $t('translation') }}</h1>
-        <div v-for="section in sections" :key="section.id">
-            <h2>{{ section.title }}</h2>
-            <h3>{{ section.subtitle }}</h3>
-            <p v-for="paragraph in section.body" :key="paragraph">{{ paragraph }}</p>
-        </div>
-    </div>
+    <v-container>
+        <v-row>
+            <v-col>
+                <h1>{{ $t('translation') }}</h1>
+                <v-divider></v-divider>
+                <div v-for="section in sections" :key="section.id">
+                    <h2>{{ section.title }}</h2>
+                    <h3>{{ section.subtitle }}</h3>
+                    <p v-for="paragraph in section.body" :key="paragraph">{{ paragraph }}</p>
+                    <v-divider></v-divider>
+                </div>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
@@ -25,7 +31,7 @@ export default {
 </script>
 
 <style scoped>
-div {
+.v-container {
     padding: 2rem;
 }
 </style>

@@ -1,11 +1,13 @@
 <!-- src/App.vue -->
 
 <template>
-  <div id="app">
-    <HeaderSection />
-    <router-view />
-    <FooterSection />
-  </div>
+  <v-app>
+    <v-main>
+      <HeaderSection />
+      <router-view />
+      <FooterSection />
+    </v-main>
+  </v-app>
 </template>
 
 <script>

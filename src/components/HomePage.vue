@@ -1,10 +1,14 @@
 <!-- src/components/HomePage.vue -->
 
 <template>
-    <div>
-        <h1>{{ $t('title') }}</h1>
-        <p>{{ $t('homeDescription') }}</p>
-    </div>
+    <v-container>
+        <v-row>
+            <v-col class="text-center">
+                <h1>{{ $t('title') }}</h1>
+                <p>{{ $t('homeDescription') }}</p>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
@@ -14,8 +18,9 @@ export default {
 </script>
 
 <style scoped>
-div {
+.v-container {
     padding: 2rem;
-    text-align: center;
+    background: var(--background);
+    color: var(--text-color);
 }
 </style>

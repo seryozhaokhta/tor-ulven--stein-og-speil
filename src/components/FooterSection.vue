@@ -1,9 +1,11 @@
 <!-- src/components/FooterSection.vue -->
 
 <template>
-    <footer>
-        <p>{{ $t('footer') }}</p>
-    </footer>
+    <v-footer app padless>
+        <v-col class="text-center" cols="12">
+            <span>{{ $t('footer') }}</span>
+        </v-col>
+    </v-footer>
 </template>
 
 <script>
@@ -13,9 +15,14 @@ export default {
 </script>
 
 <style scoped>
-footer {
+.v-footer {
     background: var(--background);
+    color: var(--text-color);
     padding: 1rem;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 </style>
+

@@ -42,6 +42,7 @@ h3 {
 }
 
 h1 {
+  z-index: 3;
   font-size: 260px;
   line-height: 0.95;
   font-weight: normal;

@@ -4,7 +4,7 @@
     <v-container>
         <v-row>
             <v-col>
-                <h1>{{ $t('norwegianOriginal') }}</h1>
+                <h2>{{ $t('norwegianOriginal') }}</h2>
                 <v-divider></v-divider>
                 <div v-for="section in sections" :key="section.id">
                     <h2>{{ section.title }}</h2>

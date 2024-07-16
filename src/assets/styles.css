@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --text-color: #000000;
+  --text-color: #363636;
   --primary-color: #1976d2;
   --secondary-color: #424242;
   --accent-color: #82b1ff;
@@ -27,14 +27,23 @@
 body {
   background: var(--background);
   color: var(--text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: Helvetica, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3 {
-  font-family: 'Roboto Slab', serif;
+h1 {
+  font-size: 260px;
+  line-height: 1.2;
+  font-weight: normal;
+  text-align: left;
+  align-items: flex-start;
+}
+
+h1,
+h2,
+h3 {
   color: var(--text-color);
 }
 
@@ -44,7 +53,9 @@ p {
   color: var(--text-color);
 }
 
-.v-app-bar, .v-footer, .v-navigation-drawer {
+.v-app-bar,
+.v-footer,
+.v-navigation-drawer {
   background-color: var(--background) !important;
   color: var(--text-color) !important;
 }

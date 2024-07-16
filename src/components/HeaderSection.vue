@@ -80,7 +80,7 @@ export default {
 
 .v-toolbar-title,
 .v-btn {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .v-btn {

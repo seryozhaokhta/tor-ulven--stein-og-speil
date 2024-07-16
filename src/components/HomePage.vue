@@ -4,8 +4,9 @@
     <v-container>
         <v-row>
             <v-col class="text-center">
+                <h3>{{ $t('author') }}</h3>
                 <h1>{{ $t('title') }}</h1>
-                <p>{{ $t('homeDescription') }}</p>
+                <h2>{{ $t('subtitle') }}</h2>
             </v-col>
         </v-row>
     </v-container>
@@ -19,7 +20,7 @@ export default {
 
 <style scoped>
 .v-container {
-    padding: 2rem;
+    padding: 0;
     background: var(--background);
     color: var(--text-color);
 }

@@ -4,12 +4,12 @@ import { createStore } from "vuex";
 
 const store = createStore({
   state: {
-    isBookInteractionPanelVisible: false,
+    isContentSectionVisible: false, // Обновлено имя состояния
   },
   mutations: {
-    toggleBookInteractionPanel(state) {
-      state.isBookInteractionPanelVisible =
-        !state.isBookInteractionPanelVisible;
+    toggleContentSection(state) {
+      // Обновлено имя мутации
+      state.isContentSectionVisible = !state.isContentSectionVisible;
     },
   },
 });

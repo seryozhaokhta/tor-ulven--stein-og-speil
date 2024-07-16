@@ -1,6 +1,7 @@
 // src/main.js
 
 import { createApp } from "vue";
+import { MotionPlugin } from '@vueuse/motion';
 import App from "./App.vue";
 import router from "./router";
 import i18n from "./i18n";
@@ -18,5 +19,7 @@ app.use(vuetify);
 app.use(store);
 
 document.documentElement.setAttribute("data-theme", "light");
+
+app.use(MotionPlugin);
 
 app.mount("#app");

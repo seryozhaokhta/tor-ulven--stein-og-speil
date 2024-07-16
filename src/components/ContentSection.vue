@@ -1,4 +1,4 @@
-<!-- src/components/BookInteractionPanel.vue -->
+<!-- src/components/ContentSection.vue -->
 
 <template>
     <v-navigation-drawer v-model="isPanelOpen" app right temporary>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-    name: 'BookInteractionPanel',
+    name: 'ContentSection',
     props: {
         isOpen: {
             type: Boolean,

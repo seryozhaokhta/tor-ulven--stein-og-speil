@@ -4,7 +4,6 @@
     <v-container>
         <v-row>
             <v-col>
-                <h2>{{ $t('translation') }}</h2>
                 <v-divider></v-divider>
                 <div v-for="section in sections" :key="section.id">
                     <h2>{{ section.title }}</h2>

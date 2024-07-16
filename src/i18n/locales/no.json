@@ -1,15 +1,12 @@
 {
-  "title": "Stein og Speil",
+  "title": "Stein og speil",
   "author": "Tor Ulven",
   "subtitle": "mixtum compositum",
   "home": "Hjem",
   "contents": "Innhold",
   "openContents": "Åpne innhold",
   "homeDescription": "Utforsk boken av Tor Ulven",
-  "norwegianOriginal": "Norsk Original",
   "translation": "Oversettelse",
-  "toggleTheme": "Bytt tema",
-  "switchLanguage": "Bytt til russisk",
   "footer": "footer",
   "sections": [
     {

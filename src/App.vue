@@ -9,21 +9,21 @@
       </v-container>
     </v-main>
     <FooterSection @toggle-panel="togglePanel" />
-    <BookInteractionPanel :isOpen="isPanelOpen" />
+    <ContentSection :isOpen="isPanelOpen" />
   </v-app>
 </template>
 
 <script>
 import HeaderSection from './components/HeaderSection.vue';
 import FooterSection from './components/FooterSection.vue';
-import BookInteractionPanel from './components/BookInteractionPanel.vue';
+import ContentSection from './components/ContentSection.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderSection,
     FooterSection,
-    BookInteractionPanel
+    ContentSection
   },
   data() {
     return {

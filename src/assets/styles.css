@@ -24,6 +24,7 @@
   --warning-color: #ffc107;
 }
 
+/* Основные стили */
 body {
   background: var(--background);
   color: var(--text-color);
@@ -33,20 +34,32 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-size: 260px;
-  line-height: 1.2;
-  font-weight: normal;
-  text-align: left;
-  align-items: flex-start;
-}
-
+h1,
 h2,
 h3 {
+  text-align: left; /* Выравнивание текста по левому краю для всех заголовков */
   color: var(--text-color);
 }
 
+h1 {
+  font-size: 260px;
+  line-height: 0.95;
+  font-weight: normal;
+  align-items: flex-start;
+}
+
+h2 {
+  margin-top: 80px;
+  opacity: 0.5;
+}
+
+h3 {
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
 p {
+  max-width: 750px;
   line-height: 1.6;
   margin-bottom: 1rem;
   color: var(--text-color);
@@ -62,29 +75,48 @@ p {
 .v-container {
   background-color: var(--background);
   color: var(--text-color);
+  padding: 20px; /* Подходит для всех устройств, кроме тех, что в медиа-запросах */
 }
 
-/* Адаптивные заголовки */
-@media (max-width: 768px) {
+/* Адаптивные стили */
+@media (max-width: 480px) {
   h1 {
-    font-size: 48px;
+    font-size: 24px; /* Меньший размер для заголовков на маленьких устройствах */
   }
   h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .v-container {
+    padding: 10px; /* Меньше отступов на маленьких устройствах */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .v-container {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
     font-size: 36px;
   }
-  h3 {
-    font-size: 24px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1200px) {
-  h1 {
-    font-size: 120px;
-  }
   h2 {
-    font-size: 72px;
+    font-size: 30px;
   }
   h3 {
-    font-size: 48px;
+    font-size: 28px;
   }
 }

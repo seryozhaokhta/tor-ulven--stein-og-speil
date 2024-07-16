@@ -1,15 +1,12 @@
 {
-  "title": "Камень и Зеркало",
+  "title": "Камень и зеркало",
   "author": "Тур Ульвен",
   "subtitle": "смешанная композиция",
   "home": "Главная",
   "contents": "Содержание",
   "openContents": "Открыть содержание",
   "homeDescription": "Исследуйте?",
-  "norwegianOriginal": "Норвежский Оригинал",
   "translation": "Перевод",
-  "toggleTheme": "Переключить тему",
-  "switchLanguage": "Переключиться на норвежский",
   "footer": "footer",
   "sections": [
     {

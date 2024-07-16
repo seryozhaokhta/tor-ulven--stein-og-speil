@@ -3,7 +3,7 @@
 <template>
     <v-footer app padless>
         <v-col class="text-center" cols="12">
-            <span>{{ $t('footer') }}</span>
+            <v-btn @click="$emit('toggle-panel')" class="theme-btn">{{ $t('openContents') }}</v-btn>
         </v-col>
     </v-footer>
 </template>
@@ -23,5 +23,12 @@ export default {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.theme-btn {
+    color: var(--text-color);
+    background: var(--background);
+    border: 1px solid var(--text-color);
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 </style>

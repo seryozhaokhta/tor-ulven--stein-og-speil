@@ -1,26 +1,49 @@
 <!-- src/App.vue -->
 
 <template>
-  <v-app>
-    <HeaderSection />
+  <v-app :class="themeClass">
+    <HeaderSection @toggle-theme="toggleTheme" />
     <v-main>
       <v-container fluid>
         <router-view />
       </v-container>
     </v-main>
-    <FooterSection />
+    <FooterSection @toggle-panel="togglePanel" />
+    <BookInteractionPanel :isOpen="isPanelOpen" />
   </v-app>
 </template>
 
 <script>
 import HeaderSection from './components/HeaderSection.vue';
 import FooterSection from './components/FooterSection.vue';
+import BookInteractionPanel from './components/BookInteractionPanel.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderSection,
-    FooterSection
+    FooterSection,
+    BookInteractionPanel
+  },
+  data() {
+    return {
+      isPanelOpen: false,
+      isDarkTheme: false,
+    };
+  },
+  computed: {
+    themeClass() {
+      return this.isDarkTheme ? 'dark' : '';
+    }
+  },
+  methods: {
+    togglePanel() {
+      this.isPanelOpen = !this.isPanelOpen;
+    },
+    toggleTheme() {
+      this.isDarkTheme = !this.isDarkTheme;
+      document.documentElement.setAttribute('data-theme', this.isDarkTheme ? 'dark' : 'light');
+    }
   }
 }
 </script>

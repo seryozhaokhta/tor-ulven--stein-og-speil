@@ -4,13 +4,20 @@ import { createStore } from "vuex";
 
 const store = createStore({
   state: {
-    isContentSectionVisible: false, // Обновлено имя состояния
+    isContentSectionVisible: false,
   },
   mutations: {
     toggleContentSection(state) {
-      // Обновлено имя мутации
       state.isContentSectionVisible = !state.isContentSectionVisible;
     },
+  },
+  actions: {
+    toggleContentSection({ commit }) {
+      commit("toggleContentSection");
+    },
+  },
+  getters: {
+    isContentSectionVisible: (state) => state.isContentSectionVisible,
   },
 });
 

@@ -1,27 +1,19 @@
 /* src/assets/styles.css */
 
 :root {
-  --background: #ffffff;
-  --text-color: #363636;
+  --background: #e9e9e9;
+  --text-color: #181818;
   --primary-color: #1976d2;
-  --secondary-color: #424242;
+  --secondary-color: #999999;
   --accent-color: #82b1ff;
-  --error-color: #ff5252;
-  --info-color: #2196f3;
-  --success-color: #4caf50;
-  --warning-color: #ffc107;
 }
 
 [data-theme="dark"] {
   --background: #121212;
   --text-color: #e0e0e0;
   --primary-color: #bb86fc;
-  --secondary-color: #424242;
+  --secondary-color: #cacaca;
   --accent-color: #03dac6;
-  --error-color: #cf6679;
-  --info-color: #2196f3;
-  --success-color: #4caf50;
-  --warning-color: #ffc107;
 }
 
 /* Основные стили */
@@ -38,7 +30,7 @@ h1,
 h2,
 h3 {
   text-align: left; /* Выравнивание текста по левому краю для всех заголовков */
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 
 h1 {

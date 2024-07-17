@@ -34,7 +34,8 @@ export default {
     color: var(--text-color);
     background: var(--background);
     border: 1px solid var(--text-color);
+    border-radius: 12px;
     transition: color 0.3s ease, border-color 0.3s ease;
+    box-shadow: none;
 }
 </style>
-

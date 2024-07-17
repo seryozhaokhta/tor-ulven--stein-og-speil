@@ -3,14 +3,19 @@
 <template>
     <v-footer app padless>
         <v-col class="text-center" cols="12">
-            <v-btn @click="$emit('toggle-panel')" class="theme-btn">{{ $t('openContents') }}</v-btn>
+            <v-btn @click="toggleDrawer" class="theme-btn">{{ $t('openContents') }}</v-btn>
         </v-col>
     </v-footer>
 </template>
 
 <script>
 export default {
-    name: 'FooterSection'
+    name: 'FooterSection',
+    methods: {
+        toggleDrawer() {
+            this.$store.dispatch('toggleContentSection');
+        }
+    }
 }
 </script>
 
@@ -32,3 +37,4 @@ export default {
     transition: color 0.3s ease, border-color 0.3s ease;
 }
 </style>
+

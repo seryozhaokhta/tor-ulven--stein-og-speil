@@ -29,11 +29,20 @@ export default {
             default: false,
         },
     },
-    data() {
-        return {
-            isPanelOpen: this.isOpen,
-            sections: Array.from({ length: 126 }, (_, i) => ({ id: i })),
-        };
+    computed: {
+        isPanelOpen: {
+            get() {
+                return this.$store.getters.isContentSectionVisible;
+            },
+            set(value) {
+                if (value !== this.$store.getters.isContentSectionVisible) {
+                    this.$store.dispatch('toggleContentSection');
+                }
+            }
+        },
+        sections() {
+            return Array.from({ length: 126 }, (_, i) => ({ id: i }));
+        }
     },
     methods: {
         getSectionTitle(id) {
@@ -45,7 +54,7 @@ export default {
         goToSection(id) {
             const routeName = this.$i18n.locale === 'no' ? 'norwegian-original' : 'translation';
             this.$router.push({ name: routeName, params: { sectionId: id } });
-            this.isPanelOpen = false;
+            this.$store.dispatch('toggleContentSection'); // Close the drawer
         }
     },
     watch: {
@@ -57,5 +66,5 @@ export default {
 </script>
 
 <style scoped>
-/* Add any specific styles for the panel here */
+/* Styles */
 </style>

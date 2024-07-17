@@ -7,8 +7,16 @@ import TranslationSection from "../components/TranslationSection.vue";
 
 const routes = [
   { path: "/", component: HomePage },
-  { path: "/norwegian-original", component: NorwegianOriginal },
-  { path: "/translation", component: TranslationSection },
+  {
+    path: "/norwegian-original/:sectionId?",
+    name: "norwegian-original",
+    component: NorwegianOriginal,
+  },
+  {
+    path: "/translation/:sectionId?",
+    name: "translation",
+    component: TranslationSection,
+  },
 ];
 
 const router = createRouter({
@@ -17,4 +25,3 @@ const router = createRouter({
 });
 
 export default router;
-

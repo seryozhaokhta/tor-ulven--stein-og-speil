@@ -43,7 +43,8 @@ export default {
             return this.$t(`sections.${id}.subtitle`);
         },
         goToSection(id) {
-            this.$emit('scroll-to-section', id);
+            const routeName = this.$i18n.locale === 'no' ? 'norwegian-original' : 'translation';
+            this.$router.push({ name: routeName, params: { sectionId: id } });
             this.isPanelOpen = false;
         }
     },

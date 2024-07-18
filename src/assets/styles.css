@@ -74,7 +74,7 @@ p {
 /* Адаптивные стили */
 @media (max-width: 480px) {
   h1 {
-    font-size: 24px; /* Меньший размер для заголовков на маленьких устройствах */
+    font-size: 90px; 
   }
   h2 {
     font-size: 18px;
@@ -83,13 +83,13 @@ p {
     font-size: 16px;
   }
   .v-container {
-    padding: 10px; /* Меньше отступов на маленьких устройствах */
+    padding: 5px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   h1 {
-    font-size: 28px;
+    font-size: 90px;
   }
   h2 {
     font-size: 22px;

@@ -31,49 +31,76 @@ export default {
     width: 80%;
     height: auto;
     object-fit: cover;
+    opacity: 0;
+    animation: slideDown 2s ease-in-out forwards;
 }
 
 .stein {
     left: -25%;
     mix-blend-mode: difference;
+    animation-delay: 1.5s;
 }
 
 .speil {
     right: -5%;
+    animation-delay: 1s;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Адаптивные стили для мобильных устройств */
 @media (max-width: 480px) {
     .background-image {
         width: 100%;
-        /* Увеличиваем на мобильных устройствах */
+        animation: slideDownMobile 2s ease-in-out forwards;
     }
 
     .stein {
         left: 0;
-        /* Центрируем на мобильных устройствах */
+        animation-delay: 1.5s;
     }
 
     .speil {
         right: 0;
-        /* Центрируем на мобильных устройствах */
+        top: 55%;
+        animation-delay: 1s;
+    }
+}
+
+@keyframes slideDownMobile {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
 /* Адаптивные стили для планшетов */
 @media (min-width: 481px) and (max-width: 768px) {
     .background-image {
-        width: 90%;
-        /* Слегка уменьшаем размер */
+        width: 50%;
     }
 
     .stein {
-        left: -15%;
-        /* Менее агрессивное смещение */
+        left: 15%;
     }
 
     .speil {
-        right: -10%;
+        right: 10%;
     }
 }
 
@@ -81,12 +108,10 @@ export default {
 @media (min-width: 769px) {
     .background-image {
         width: 80%;
-        /* Возвращаем к исходному размеру */
     }
 
     .stein {
         left: -25%;
-        /* Возвращаем к исходной позиции */
     }
 
     .speil {
@@ -94,4 +119,3 @@ export default {
     }
 }
 </style>
-

@@ -29,7 +29,7 @@ body {
 h1,
 h2,
 h3 {
-  text-align: left; /* Выравнивание текста по левому краю для всех заголовков */
+  text-align: left;
   color: var(--secondary-color);
 }
 

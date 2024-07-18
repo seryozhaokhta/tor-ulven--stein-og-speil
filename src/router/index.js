@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../components/HomePage.vue";
 import NorwegianOriginal from "../components/NorwegianOriginal.vue";
 import TranslationSection from "../components/TranslationSection.vue";
+import AuthorSection from "../components/AuthorSection.vue"; // Импортируем новый компонент
 
 const routes = [
   { path: "/", component: HomePage },
@@ -17,6 +18,11 @@ const routes = [
     name: "translation",
     component: TranslationSection,
   },
+  {
+    path: "/author", // Добавляем маршрут для страницы автора
+    name: "author",
+    component: AuthorSection,
+  },
 ];
 
 const router = createRouter({
@@ -25,3 +31,4 @@ const router = createRouter({
 });
 
 export default router;
+

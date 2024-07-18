@@ -11,6 +11,11 @@
   "toggleTheme": "Bytt tema",
   "switchLanguage": "Bytt til russisk",
   "footer": "footer",
+  "authorInfo": {
+    "title": "Om forfatteren",
+    "subtitle": "En kort biografi",
+    "body": "Tor Ulven var en norsk poet og essayist kjent for sitt poetiske språk og filosofiske innsikt."
+  },
   "sections": [
     {
       "id": 1,

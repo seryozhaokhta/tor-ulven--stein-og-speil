@@ -4,8 +4,8 @@
     <v-container>
         <BackgroundSection />
         <v-row>
-            <v-col class="text-center">
-                <h3>{{ $t('author') }}</h3>
+            <v-col class="text-left">
+                <h3 class="author-name" @click="navigateToAuthor">{{ $t('author') }}</h3>
                 <h1>{{ $t('title') }}</h1>
                 <h2>{{ $t('subtitle') }}</h2>
             </v-col>
@@ -20,6 +20,11 @@ export default {
     name: 'HomePage',
     components: {
         BackgroundSection
+    },
+    methods: {
+        navigateToAuthor() {
+            this.$router.push({ name: 'author' });
+        }
     }
 }
 </script>
@@ -31,5 +36,35 @@ export default {
     color: var(--text-color);
     position: relative;
     z-index: 3;
+}
+
+.v-col.text-left {
+    text-align: left;
+}
+
+.author-name {
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: 10px 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.author-name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.author-name:hover::after {
+    transform: scaleX(1);
 }
 </style>

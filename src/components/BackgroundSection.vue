@@ -7,10 +7,7 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'BackgroundSection'
-}
+<script setup>
 </script>
 
 <style scoped>

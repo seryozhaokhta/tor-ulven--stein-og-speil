@@ -32,10 +32,11 @@ export default {
 <style scoped>
 .v-container {
     padding: 0;
-    background: var(--background);
     color: var(--text-color);
     position: relative;
     z-index: 3;
+    mix-blend-mode: difference;
+    background-color: transparent;
 }
 
 .v-col.text-left {

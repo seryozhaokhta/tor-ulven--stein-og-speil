@@ -36,13 +36,11 @@ export default {
 }
 
 .stein {
-    left: -25%;
-    mix-blend-mode: difference;
     animation-delay: 1.5s;
+    filter: blur(1.5px);
 }
 
 .speil {
-    right: -5%;
     animation-delay: 1s;
 }
 

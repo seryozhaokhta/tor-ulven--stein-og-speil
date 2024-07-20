@@ -100,16 +100,6 @@ h3 {
     .author-image {
         max-width: 250px;
     }
-
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p,
-    h3 {
-        font-size: 1rem;
-    }
 }
 
 @media (min-width: 768px) {
@@ -117,15 +107,6 @@ h3 {
         max-width: 300px;
     }
 
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    p,
-    h3 {
-        font-size: 1.2rem;
-    }
 }
 
 @media (min-width: 960px) {
@@ -133,14 +114,5 @@ h3 {
         max-width: 350px;
     }
 
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    p,
-    h3 {
-        font-size: 1.4rem;
-    }
 }
 </style>

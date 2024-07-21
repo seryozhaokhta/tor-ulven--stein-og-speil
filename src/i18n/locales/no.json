@@ -70,6 +70,7 @@
     {
       "id": 5,
       "title": "FORESTILLING I",
+      "subtitle": "",
       "body": [
         "X Jeg er helt utslitt.",
         "Y Jeg også. Vi går og legger oss med én gang.",
@@ -88,6 +89,7 @@
     {
       "id": 7,
       "title": "MELLOMSPILL II",
+      "subtitle": "",
       "body": [
         "I natt gikk fire lystige mennesker forbi her. Jeg så dem fra vinduet. Drøyt middelaldrende, og på vei hjem fra julebord, kanhende. Den ene av kvinnene (folkelig høyrøstet, men iført elegant pelsHatt og pelskåpe) skled plutselig og røK overende, men reiste seg ganske raskt igjen, tydeligvis uskadd. Mannen hennes støttet henne under armen da de vaklet videre.",
         "I dag er det søndag. De som passerer glir sakte forbi i det beske, innklemte lyset fra novembersolen, eldre ektefolk helst med noen meters avstand mellom seg. Stundom venter mannen, uten å snu seg, mens kvinnen tar ham igjen. De tråkker hull i det tynne hvite snøsløret som la seg over veien i løpet av natten. Ingen skråler. Ingen faller."
@@ -96,6 +98,7 @@
     {
       "id": 8,
       "title": "KONSERT II",
+      "subtitle": "",
       "body": [
         "Kniven tvers over den tørre hvite skålen gir en svai skygge på bunnen. Dagen varer lengre enn en gulnet elfenbenstangent. Hør, vannet strekker en plaskende rigg ute i lyset. Båten av vann, klar til å seile delfinskummende mot De Lykkelige Øyer. Den besøkendes parfyme etterpå, i privatfengselet der ovn og seng marsjerer. Du ligger stille. Stille som en sammentrykket spiral fjær."
       ]
@@ -135,6 +138,7 @@
     {
       "id": 13,
       "title": "MELLOMSPILL III",
+      "subtitle": "",
       "body": [
         "Det kjennes hvordan det vokser, et foster av flammer som langsomt kremerer sitt eget opphav innenfra. Vi brenner. Men ikke for noe. Ikke for noen. For alt og ingenting. For det rene tøv. Vi er gravide kvinner som aldri nedkommer med annet enn menneskelignende aske. På den annen side gir vi aldri opp den håpløse forestillingen om det smertefrie. Jeg husker fisketurene ned langs bekken om kvelden, små ørretter i kulpene, nærmest ørekyte, strittende av bein, ufyselige å spise, men spennende å fiske. Det finnes virkelig vann så klart at man kan se de myke, vatrøde linjene etter strømmen i bunnsanden, og en liten muddersky som står igjen etter en fisk som forsvant. Vann. Hvis vi hadde to hoder, kunne ett være ild og ett vann. Og ble de forsøkt sammensmeltet, så ville enten ilden slukne eller vannhodet fordampe."
       ]
@@ -142,6 +146,7 @@
     {
       "id": 14,
       "title": "MELLOMSPILL IV",
+      "subtitle": "",
       "body": [
         "Navnet ditt, blå bokstaver på papirets masse av døde fibre, som ikke kan reises opp igjen til trær, hvislende langsmed stein vi fulgte, urolige skygger mot papirets kjønnsnøytrale gulhet. Og bokstaver skåret i bark som gror dem uleselige, som bølger og vrir seg og lukker seg over dem som vann over en froskemann. En dykker i treet: mot bunnen, hvor den første årringen er. Og bortenfor det: Ingenting. Frø. Ingenting. En eldgammel skog av ikke-trær."
       ]
@@ -182,6 +187,7 @@
     {
       "id": 19,
       "title": "FORESTILLING III",
+      "subtitle": "",
       "body": [
         "X Der mistet jeg gaffelen under bordet.",
         "Y Værsågod, her er den.",
@@ -192,6 +198,7 @@
     {
       "id": 20,
       "title": "MELLOMSPILL VI",
+      "subtitle": "",
       "body": [
         "Nattflyet deres blinker over meg, og jeg er trygg på at den balsamerte piloten holder forfedrenes kurs."
       ]
@@ -199,6 +206,7 @@
     {
       "id": 21,
       "title": "KONSERT V",
+      "subtitle": "",
       "body": [
         "Et lystig lag. Den gamle jukeboksen spiller yndlingsmelodien din, og tonene synes å skinne som lysstråler gjennom den tette røken, slik solen kan skinne gjennom skyene en dag med bygevær. Musikken avbrytes stundom av lattersalver fra bordet ved siden av. Noen forteller vitser. Hvorfor er de blinde så glad i brødrob? Jo, fordi det står så mye interessant å lese på dem. En mann møter opp på psykiaterens kontor med en and i plast under armen. Hva er problemet Deres? spør psykiateren. Det er ikke meg det gjelder, svarte mannen. Det er min kone. Hun tror hun er en and. Du sitter mellom to svingdører på en skinntrukket kafesofa og tar del i feststemningen, men du må være usynlig, eller i hvertfall gjennomsiktig, for sidemennene dine løfter i eningen de digre, skumende ølseidlene sine og klinker tvers igjennom deg, eller inni deg, omtrent ved leveren. Det gjør ikke vondt. Når du forsøker å snakke til dem, later de ikke til å høre noe som helst."
       ]
@@ -258,6 +266,7 @@
     {
       "id": 28,
       "title": "MELLOMSPILL VIII",
+      "subtitle": "",
       "body": [
         "Nesten brann. Røysa med de ødelagte eplene og gråpærene gjæret og putret av forråtnelse så dampen slo opp, og en liten sverm av insekter vibrerte sakte i varmluften over for å utsette kuldedøden enda litt. Nå er haugen dekket av nysnø med posete former, ytterst et tynt skarelag etter mildværet i natt. Rosa desembersol rører det såvidt."
       ]
@@ -265,6 +274,7 @@
     {
       "id": 29,
       "title": "FORESTILLING V",
+      "subtitle": "",
       "body": [
         "X: Og radioastronomene driver stadig og leter. Tror du det finnes intelligent liv på andre planeter?",
         "Y: Kan godt være, det.",
@@ -283,6 +293,7 @@
     {
       "id": 31,
       "title": "KONSERT VII",
+      "subtitle": "",
       "body": [
         "Det stemmer. De udødelige gribbene slår de vakreste trillene heromkring. De får stadig flere hoder, og blir således mer polyfone. Der slutter enigheten. Vannloppene springer med genetiske beskjeder og hører ingenting."
       ]
@@ -306,6 +317,7 @@
     {
       "id": 34,
       "title": "KONSERT VIII",
+      "subtitle": "",
       "body": [
         "Du flyr, eller snarere svever, driver, gjennom et enormt, mørkt rom, et rom av lyder: endeløse, skinnende glissandi, knittrende pizzicati, kullsvarte turbulenshull av bassdrønn, men ellers tomt, ingen planeter, ingen meteor, i høyden fine støvskyer etter eksplodert musikk. Du svever der, et sted mellom nytelse og skrekk, i et stykke tid du ikke klarer å bestemme: du befinner deg alle andre steder enn i nået. Og du forsvinner lenger og lenger inn i disse uoverskuelige rommene, og personligheten din blir gradvis borte, ansiktstrekkene dine viskes ut, kroppen din dekomponeres, og det siste du tenker er at du snart selv er blitt en lyd, en tynn, navnløs lyd blant alle disse andre som hyler i det tomme, mørke rommet."
       ]
@@ -321,6 +333,7 @@
     {
       "id": 36,
       "title": "MELLOMSPILL IX",
+      "subtitle": "",
       "body": [
         "Alt rent bestikk og dekketøy er forlengst brukt opp. Tallerkenstabler har falt i gulvet. Gulvene er i sin tur så skitne at jeg vader til anklene i boss og lort. Det har kanskje noe med saken å gjøre at jeg kaster alt søppel rett ned. Det er det enkleste. Jeg trenger noen til å gjøre grunnig rent i hele huset. Men hvem skulle det bli? Hvor skulle jeg finne vedkommende? Dessuten er jeg syk. Bortsett fra en rekke smerter i omtrent alle kroppsdeler og et kreftsår i pannen, er jeg konstant forkjølet. Men å få tak i en lege er et forferdelig ork; de er bestandig opptatt og kommer aldri, og dessuten er de sure og nedlatende. Nei, det får være med legen. I grunnen er det vel sykdommen som vet best. Den vet ovenfor det vil, og liker ikke innblanding. Det verste er kanskje at jeg er sulten og tørst, og trenger noen til å skaffe meg mat og drikke, og å legge maten, og å putte glasset i hånden på meg (det faller ofte ned for meg), og til å stikke gaflene eller skjeene inn i kjeften på meg (de faller også ofte ned for meg). Det eneste som virkelig er et ork, er å spise og drikke. Det eneste jeg orker, er å ligge og å sove. Men jeg må også ha noen til å fordrive meg mens jeg sover. Det er en sykdom som vet best..........."
       ]
@@ -347,6 +360,7 @@
     {
       "id": 39,
       "title": "MELLOMSPILL X",
+      "subtitle": "",
       "body": [
         "Nei. Ikke nok en dag med denne fordomte kompleksiteten, disse i kaotisk endeløshet omflakkende bioelektriske signalene, som panikkslagne dyreflokker på hjernens liksom-evige jaktmarker, etterlatende seg et uleselig virvar av engrammatiske spor i alle størrelser og former, fra alle tidspunkter, millioner av innstemplede klokkeslett vispet og sveivet rundt til en halvt a-kronologisk, ustoppelig roterende dynges, som lodder i en gammeldags tombolaboks; den gode gamle hodeskallen utstyrt med sveiv? Nei, sveiv behøves ikke, svermene av impulser skaper forvirringen selv, og de er like umulige å få orden på som det ville være umulig å bestemme de nøyaktige posisjonene til partiklene i en synkende støvsky med teodolitt. Som om du ble et kaleidoskop hver gang du ristet på hodet.",
         "Nå må den snart komme, den kjærlige hånden som forvandler deg til en ball. Du ligger, i balls form, mot håndflatens lunke hud, fingrene er lukket rundt deg. Hånden strammer seg plutselig og kaster deg. Du spretter mot en vegg og blir borte."
@@ -363,6 +377,7 @@
     {
       "id": 41,
       "title": "MELLOMSPILL XI",
+      "subtitle": "",
       "body": [
         "Om du aldri var blitt til, ville du ikke lest dette. Og det ville ikke gjort noen forskjell. Og når du ikke lenger er til, er det som om du aldri skulle lest det. Det gjør ingen forskjell. Men nå, mens du leser det, hender noe: det eter noen sekunder av din tid, som om et lite dyr, loddent av bokstaver, gnavlende sperret veien mellom deg og ditt neste minutt. Du tar det aldri igjen. Det knasker uforstyrrelig i seg tidens mikroorganismer. Det blir aldri mett. Ikke du heller."
       ]
@@ -378,6 +393,7 @@
     {
       "id": 43,
       "title": "KONSERT X",
+      "subtitle": "",
       "body": [
         "Hvis den virkelige sorgen var like vakker og opphøyd som kunstens, som et storslagent rekviem, og vi ikke kjente mer av smerten enn tonene som flyter ut av instrumentene, da skulle vi leve et liv i sorg og svir. Og ikke kjenne stanken av muggent sirkus og råtnende dyrehaver i oss."
       ]
@@ -385,6 +401,7 @@
     {
       "id": 44,
       "title": "FORESTILLING VII",
+      "subtitle": "",
       "body": [
         "X: Jeg er så sliten. Jeg begynner å dra på årene. Kan jeg sette meg litt i denne stolen?",
         "Y: Værsågod. Men da kommer du aldri opp av den igjen. Til gjengjeld kommer det alltid til å være sommer rundt deg. Hvis du blir stående, kommer det til å være vinter hele tiden. Du må gå for å holde varmen.",
@@ -403,6 +420,7 @@
     {
       "id": 46,
       "title": "MELLOMSPILL XII",
+      "subtitle": "",
       "body": [
         "Jeg har korte, brede fingre. Hennes derimot, er usedvanlig lange og smale (det er forresten tærne også), og jeg har plutselig begynt å undre meg på hvordan det kjennes å være inni, så å si, hennes hender, å gripe med dem, å slå an pianotangenter, å skjære en skive brød med dem. Man pleier jo av og til å spekulere på hvordan det ville føles å være inni en annens hode, men hvorfor ikke like gjerne hendene? Nå, i alle fall er det akkurat like umulig å kjenne en annens hender innenfra som det er å tenke med en annens hjerne; hvordan det føles å bruke de vakre hendene hennes skal forbli like fremmed for meg som det å bruke en slik tødet klo av stål som enkelte funksjonshemmede har istedenfor hånd."
       ]
@@ -443,6 +461,7 @@
     {
       "id": 51,
       "title": "MELLOMSPILL XIII",
+      "subtitle": "",
       "body": [
         "Denne smerten er et forsteinet egg. Det lar seg ikke knuse; det der inne, hva det nå er, må ruges ut, ikke, som man kanskje kunne tro, av en steinfugl, men av en fugl av kjøtt og blod. Men vingene blir til armer, klørne til ben, nebbet blir en nese, og øynene flytter seg til de sitter ved siden av hverandre: et menneskelig blikk. Bare et menneske kan ruge ut steinegget. Er det du?"
       ]
@@ -474,6 +493,7 @@
     {
       "id": 55,
       "title": "MELLOMSPILL XIV",
+      "subtitle": "",
       "body": [
         "Man kan forestille seg en intelligens så stor at den analytisk plukker fra hverandre seg selv, hår for hår, nerve for nerve, for til slutt å sitte igjen med sitt eget kranium i hendene, råd­vill, uten å ane hvor den skal gjøre av det, og den fortsetter å kaste det nervøst fra hånd til hånd, slik en utålmodig reisende som venter på et forsinket fly kan slenge en appelsin eller noe slikt fra høyre til venstre, fra venstre til høyre, med lydelige klask mot håndflatene."
       ]

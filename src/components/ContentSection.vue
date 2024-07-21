@@ -5,7 +5,7 @@
         <v-container>
             <v-row>
                 <v-col>
-                    <h2>{{ $t('contents') }}</h2>
+                    <h2>{{ t('contents') }}</h2>
                     <v-list>
                         <v-list-item v-for="section in sections" :key="section.id" @click="goToSection(section.id)">
                             <v-list-item-content>
@@ -20,49 +20,57 @@
     </v-navigation-drawer>
 </template>
 
-<script>
-export default {
-    name: 'ContentSection',
-    props: {
-        isOpen: {
-            type: Boolean,
-            default: false,
-        },
+<script setup>
+import { ref, computed, watch, nextTick } from 'vue';
+import { useStore } from 'vuex';
+import { useI18n } from 'vue-i18n';
+import { useRouter } from 'vue-router';
+
+const store = useStore();
+const { t, locale } = useI18n();
+const router = useRouter();
+
+const isOpen = ref(false);
+
+const isPanelOpen = computed({
+    get() {
+        return store.getters.isContentSectionVisible;
     },
-    computed: {
-        isPanelOpen: {
-            get() {
-                return this.$store.getters.isContentSectionVisible;
-            },
-            set(value) {
-                if (value !== this.$store.getters.isContentSectionVisible) {
-                    this.$store.dispatch('toggleContentSection');
-                }
-            }
-        },
-        sections() {
-            return Array.from({ length: 126 }, (_, i) => ({ id: i }));
+    set(value) {
+        if (value !== store.getters.isContentSectionVisible) {
+            store.dispatch('toggleContentSection');
         }
-    },
-    methods: {
-        getSectionTitle(id) {
-            return this.$t(`sections.${id}.title`);
-        },
-        getSectionSubtitle(id) {
-            return this.$t(`sections.${id}.subtitle`);
-        },
-        goToSection(id) {
-            const routeName = this.$i18n.locale === 'no' ? 'norwegian-original' : 'translation';
-            this.$router.push({ name: routeName, params: { sectionId: id } });
-            this.$store.dispatch('toggleContentSection'); // Close the drawer
+    }
+});
+
+const sections = Array.from({ length: 126 }, (_, i) => ({ id: i }));
+
+function getSectionTitle(id) {
+    return t(`sections.${id}.title`);
+}
+
+function getSectionSubtitle(id) {
+    return t(`sections.${id}.subtitle`);
+}
+
+function goToSection(id) {
+    const routeName = locale.value === 'no' ? 'norwegian-original' : 'translation';
+    router.push({ name: routeName, params: { sectionId: id } });
+    nextTick(() => {
+        const sectionElement = document.querySelector(`[ref='section-${id}']`);
+        if (sectionElement) {
+            sectionElement.scrollIntoView({ behavior: 'smooth' });
         }
-    },
-    watch: {
-        isOpen(newValue) {
-            this.isPanelOpen = newValue;
-        },
-    },
-};
+    });
+    store.dispatch('toggleContentSection'); // Close the drawer
+}
+
+watch(
+    () => isOpen.value,
+    (newValue) => {
+        isPanelOpen.value = newValue;
+    }
+);
 </script>
 
 <style scoped>

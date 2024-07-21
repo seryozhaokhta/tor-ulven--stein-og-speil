@@ -10,62 +10,60 @@
                 <p>{{ authorInfo.body }}</p>
 
                 <section>
-                    <h3>{{ $t('authorInfo.introductionTitle') }}</h3>
-                    <p>{{ $t('authorInfo.introduction') }}</p>
+                    <h3>{{ t('authorInfo.introductionTitle') }}</h3>
+                    <p>{{ t('authorInfo.introduction') }}</p>
                 </section>
 
                 <section>
-                    <h3>{{ $t('authorInfo.philosophyAndStyleTitle') }}</h3>
-                    <p>{{ $t('authorInfo.philosophyAndStyle') }}</p>
+                    <h3>{{ t('authorInfo.philosophyAndStyleTitle') }}</h3>
+                    <p>{{ t('authorInfo.philosophyAndStyle') }}</p>
                 </section>
 
                 <section>
-                    <h3>{{ $t('authorInfo.mixtumCompositumTitle') }}</h3>
-                    <p>{{ $t('authorInfo.mixtumCompositum') }}</p>
+                    <h3>{{ t('authorInfo.mixtumCompositumTitle') }}</h3>
+                    <p>{{ t('authorInfo.mixtumCompositum') }}</p>
                 </section>
 
                 <section>
-                    <h3>{{ $t('authorInfo.laconicismAndPoetryTitle') }}</h3>
-                    <p>{{ $t('authorInfo.laconicismAndPoetry') }}</p>
+                    <h3>{{ t('authorInfo.laconicismAndPoetryTitle') }}</h3>
+                    <p>{{ t('authorInfo.laconicismAndPoetry') }}</p>
                 </section>
 
                 <section>
-                    <h3>{{ $t('authorInfo.deathAndBeautyTitle') }}</h3>
-                    <p>{{ $t('authorInfo.deathAndBeauty') }}</p>
+                    <h3>{{ t('authorInfo.deathAndBeautyTitle') }}</h3>
+                    <p>{{ t('authorInfo.deathAndBeauty') }}</p>
                 </section>
 
                 <section>
-                    <h3>{{ $t('authorInfo.imageryOfDecayTitle') }}</h3>
-                    <p>{{ $t('authorInfo.imageryOfDecay') }}</p>
+                    <h3>{{ t('authorInfo.imageryOfDecayTitle') }}</h3>
+                    <p>{{ t('authorInfo.imageryOfDecay') }}</p>
                 </section>
 
                 <section>
-                    <h3>{{ $t('authorInfo.masterOfDescriptionTitle') }}</h3>
-                    <p>{{ $t('authorInfo.masterOfDescription') }}</p>
+                    <h3>{{ t('authorInfo.masterOfDescriptionTitle') }}</h3>
+                    <p>{{ t('authorInfo.masterOfDescription') }}</p>
                 </section>
 
                 <section>
-                    <h3>{{ $t('authorInfo.conclusionTitle') }}</h3>
-                    <p>{{ $t('authorInfo.conclusion') }}</p>
+                    <h3>{{ t('authorInfo.conclusionTitle') }}</h3>
+                    <p>{{ t('authorInfo.conclusion') }}</p>
                 </section>
             </v-col>
         </v-row>
     </v-container>
 </template>
 
-<script>
-export default {
-    name: 'AuthorSection',
-    computed: {
-        authorInfo() {
-            return {
-                title: this.$t('authorInfo.title'),
-                subtitle: this.$t('authorInfo.subtitle'),
-                body: this.$t('authorInfo.body')
-            };
-        }
-    }
-}
+<script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
+const authorInfo = computed(() => ({
+    title: t('authorInfo.title'),
+    subtitle: t('authorInfo.subtitle'),
+    body: t('authorInfo.body')
+}));
 </script>
 
 <style scoped>
@@ -106,13 +104,11 @@ h3 {
     .author-image {
         max-width: 300px;
     }
-
 }
 
 @media (min-width: 960px) {
     .author-image {
         max-width: 350px;
     }
-
 }
 </style>

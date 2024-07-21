@@ -10,9 +10,10 @@ const messages = {
 };
 
 const i18n = createI18n({
-  locale: "no", // set locale
-  fallbackLocale: "ru", // set fallback locale
-  messages, // set locale messages
+  legacy: false, // Убедитесь, что legacy mode отключен
+  locale: "no",
+  fallbackLocale: "ru",
+  messages,
 });
 
 export default i18n;

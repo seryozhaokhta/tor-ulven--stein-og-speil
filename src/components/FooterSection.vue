@@ -3,19 +3,20 @@
 <template>
     <v-footer app padless>
         <v-col class="text-center" cols="12">
-            <v-btn @click="toggleDrawer" class="theme-btn">{{ $t('openContents') }}</v-btn>
+            <v-btn @click="toggleDrawer" class="theme-btn">{{ t('openContents') }}</v-btn>
         </v-col>
     </v-footer>
 </template>
 
-<script>
-export default {
-    name: 'FooterSection',
-    methods: {
-        toggleDrawer() {
-            this.$store.dispatch('toggleContentSection');
-        }
-    }
+<script setup>
+import { useStore } from 'vuex';
+import { useI18n } from 'vue-i18n';
+
+const store = useStore();
+const { t } = useI18n();
+
+function toggleDrawer() {
+    store.dispatch('toggleContentSection');
 }
 </script>
 

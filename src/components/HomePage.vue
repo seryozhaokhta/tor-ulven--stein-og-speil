@@ -5,27 +5,24 @@
         <BackgroundSection />
         <v-row>
             <v-col class="text-left">
-                <h3 class="author-name" @click="navigateToAuthor">{{ $t('author') }}</h3>
-                <h1>{{ $t('title') }}</h1>
-                <h2>{{ $t('subtitle') }}</h2>
+                <h3 class="author-name" @click="navigateToAuthor">{{ t('author') }}</h3>
+                <h1>{{ t('title') }}</h1>
+                <h2>{{ t('subtitle') }}</h2>
             </v-col>
         </v-row>
     </v-container>
 </template>
 
-<script>
+<script setup>
+import { useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n';
 import BackgroundSection from './BackgroundSection.vue';
 
-export default {
-    name: 'HomePage',
-    components: {
-        BackgroundSection
-    },
-    methods: {
-        navigateToAuthor() {
-            this.$router.push({ name: 'author' });
-        }
-    }
+const router = useRouter();
+const { t } = useI18n();
+
+function navigateToAuthor() {
+    router.push({ name: 'author' });
 }
 </script>
 

@@ -5,7 +5,7 @@
         <v-row>
             <v-col>
                 <v-divider></v-divider>
-                <div v-for="section in sections" :key="section.id" :ref="'section-' + section.id">
+                <div v-for="section in sections" :key="section.id" :class="'section-' + section.id">
                     <h2>{{ section.title }}</h2>
                     <h3>{{ section.subtitle }}</h3>
                     <p v-for="paragraph in section.body" :key="paragraph">{{ paragraph }}</p>
@@ -16,38 +16,32 @@
     </v-container>
 </template>
 
-<script>
+<script setup>
+import { ref, nextTick, watch } from 'vue';
+import { useRoute } from 'vue-router';
 import ru from '../i18n/locales/ru.json';
-import { nextTick } from 'vue';
 
-export default {
-    name: 'TranslationSection',
-    data() {
-        return {
-            sections: ru.sections
-        };
-    },
-    methods: {
-        scrollToSection(sectionId) {
-            nextTick().then(() => {
-                const sectionElement = this.$refs['section-' + sectionId];
-                if (sectionElement && sectionElement[0]) {
-                    sectionElement[0].scrollIntoView({ behavior: 'smooth' });
-                }
-            });
+const sections = ref(ru.sections);
+const route = useRoute();
+
+function scrollToSection(sectionId) {
+    nextTick(() => {
+        const sectionElement = document.querySelector(`.section-${sectionId}`);
+        if (sectionElement) {
+            sectionElement.scrollIntoView({ behavior: 'smooth' });
         }
-    },
-    watch: {
-        $route: {
-            immediate: true,
-            handler(to) {
-                if (to.params.sectionId) {
-                    this.scrollToSection(to.params.sectionId);
-                }
-            }
-        }
-    }
+    });
 }
+
+watch(
+    () => route.params.sectionId,
+    (newSectionId) => {
+        if (newSectionId) {
+            scrollToSection(newSectionId);
+        }
+    },
+    { immediate: true }
+);
 </script>
 
 <style scoped>
@@ -57,4 +51,3 @@ export default {
     color: var(--text-color);
 }
 </style>
-

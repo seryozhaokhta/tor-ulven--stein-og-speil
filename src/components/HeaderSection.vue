@@ -8,12 +8,17 @@
             <v-btn text to="/">{{ t('home') }}</v-btn>
             <v-btn text to="/norwegian-original">{{ t('norwegianOriginal') }}</v-btn>
             <v-btn text to="/translation">{{ t('translation') }}</v-btn>
-            <v-btn :class="{ 'language-active': locale.value === 'no' }" text @click="switchLanguage('no')">
-                NO
-            </v-btn>
-            <v-btn :class="{ 'language-active': locale.value === 'ru' }" text @click="switchLanguage('ru')">
-                RU
-            </v-btn>
+            <div class="language-switcher">
+                <div class="highlight" :style="highlightStyle"></div>
+                <button class="language-button" :class="{ active: locale.value === 'no' }" @click="switchLanguage('no')"
+                    ref="noButton">
+                    NO
+                </button>
+                <button class="language-button" :class="{ active: locale.value === 'ru' }" @click="switchLanguage('ru')"
+                    ref="ruButton">
+                    RU
+                </button>
+            </div>
             <v-btn icon @click="toggleTheme">
                 <v-icon>{{ themeIcon }}</v-icon>
             </v-btn>
@@ -52,6 +57,17 @@ const isMobile = ref(window.innerWidth <= 768);
 
 const themeIcon = computed(() => (isDarkTheme.value ? 'mdi-weather-night' : 'mdi-weather-sunny'));
 console.log('themeIcon:', themeIcon);
+
+const noButton = ref(null);
+const ruButton = ref(null);
+
+const highlightStyle = computed(() => {
+    const button = locale.value === 'no' ? noButton.value : ruButton.value;
+    return {
+        left: `${button?.offsetLeft}px`,
+        width: `${button?.offsetWidth}px`
+    };
+});
 
 function toggleTheme() {
     console.log('toggleTheme called');
@@ -112,10 +128,43 @@ onBeforeUnmount(() => {
     margin: 0 8px;
 }
 
-.language-active {
-    background-color: #FFFFFF;
-    color: #000000;
+.language-switcher {
+    position: relative;
+    display: flex;
+    background-color: var(--language-switcher-background);
+    border-radius: 16px;
+    padding: 4px;
+}
+
+.highlight {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 0;
+    background-color: var(--highlight-background);
     border-radius: 12px;
+    transition: left 0.3s ease, width 0.3s ease;
+    z-index: 0;
+}
+
+.language-button {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.language-button.active {
+    color: var(--language-active-color);
+    font-weight: bold;
+}
+
+.language-button:not(.active) {
+    color: var(--language-inactive-color);
 }
 
 .v-navigation-drawer {
@@ -128,4 +177,3 @@ onBeforeUnmount(() => {
     }
 }
 </style>
-
